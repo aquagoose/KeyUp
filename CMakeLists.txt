@@ -16,3 +16,8 @@ endif()
 # Must link with SDL2 statically on windows as for some reason linking with shared SDL causes the entry point to disappear.
 # Should probably look into this at some point.
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL2::SDL2-static)
+
+# ---------- GLAD ----------
+
+add_subdirectory(lib/glad)
+target_link_libraries(${PROJECT_NAME} PRIVATE glad)
