@@ -21,3 +21,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE SDL2::SDL2-static)
 
 add_subdirectory(lib/glad)
 target_link_libraries(${PROJECT_NAME} PRIVATE glad)
+
+# ---------- GLM ----------
+
+add_subdirectory(lib/glm)
+target_link_libraries(${PROJECT_NAME} PRIVATE glm)
