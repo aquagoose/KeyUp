@@ -1,6 +1,6 @@
-#include <SDL.h>
-#include <glad/glad.h>
-#include <glm/glm.hpp>
+#include "SDL2/SDL.h"
+#include "glad/glad.h"
+#include "glm/glm.hpp"
 #include <iostream>
 
 int main(int argc, char* argv[]) {
