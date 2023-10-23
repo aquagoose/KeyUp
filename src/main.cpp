@@ -3,7 +3,13 @@
 #include "glm/glm.hpp"
 #include <iostream>
 
+#include "Core/Utils.h"
+
 int main(int argc, char* argv[]) {
+    std::cout << Core::FormatString("Hello! %d, %d, %s.", 10, 20, "test") << std::endl;
+
+    return 0;
+
     if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
         std::cout << "SDL Failed to initialize: " << SDL_GetError() << std::endl;
         return 1;
